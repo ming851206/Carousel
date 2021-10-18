@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+}
+:root{
+    --img-height: 500px;
+}
+body{
+    margin: 0;
+}
+h1{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    text-indent: 2px;
+}
+.wrapper{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.container{
+    margin: 0 auto;
+    width: 60%; 
+    height: var(--img-height);
+    overflow: hidden;
+    flex-grow: 1;
+}
+#imgGroups{
+    position: relative;
+    height: 100%;
+}
+#imgGroups li{
+    float: left;
+}
+#imgGroups li img{
+    width: 100%;
+    height: var(--img-height);
+    object-fit: cover;
+    object-position: center;
+}
+#dots{
+    width: 250px;
+    height: 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(226, 222, 222);
+}
+.-on{
+    background-color: rgb(170, 163, 163);
+}
+.change{
+    background-image: url("../images/normal.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+    margin: 0 30px;
+}
+.change:hover{
+    background-image: url("../images/hover.svg");
+}
+.pre{
+    transform: rotate(180deg);
+}
