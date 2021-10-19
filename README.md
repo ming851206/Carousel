@@ -6,4 +6,4 @@
 
 --------------------------------------------------------------------
 
-實作連結：https://ming851206.github.io/Digital-Clock/
+實作連結：https://ming851206.github.io/Carousel/
